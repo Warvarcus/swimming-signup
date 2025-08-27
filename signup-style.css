@@ -3,6 +3,7 @@
 }
 
 body {
+  font-size: 18px;
   overflow-y: scroll !important;
   overflow-x: auto !important;
   height: 100%;
