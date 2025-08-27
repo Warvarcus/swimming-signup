@@ -16,20 +16,34 @@ h1 {
 }
 
 nav {
-  text-align: center;
+  margin: auto;
   position: relative;
-  width: 100%;
+  background-color: rgb(20, 20, 40);
+  text-align: center;
+  width: 40%;
+  max-width: 650px;
+  min-width: 350px;
+  border-radius: 30%;
+  border: 2px solid linen;
 }
 
 nav div {
-  margin-bottom: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   font-size: 4rem;
 }
-a{
+
+nav div:not(:last-of-type) {
+  margin-bottom: 4rem;
+}
+
+a, a:visited {
+  color: khaki;
   text-decoration: none;
 }
+
 a:hover{
   color: linen;
-  background: radial-gradient(#e66465, cadetblue);
-  border-radius: 100%;
+  background-color: rgb(50, 50, 70);
+  border: 1px solid linen;
 }
