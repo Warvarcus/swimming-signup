@@ -5,14 +5,21 @@
 body {
   height: 100%;
   margin: 0;
-  background-color: cadetblue;
+  background-color: deepskyblue;
   font-size: 20px;
 }
 
 h1 {
+  padding: 1rem 0 1rem 0;
+  margin-top: 0;
   bottom: 100%;
   text-align: center;
   font-size: 5rem;
+  color: linen;
+  text-shadow: -1px -1px 0 black;
+  background-color: rgb(20, 20, 40);
+  border-bottom: 4px solid linen;
+  box-shadow: 0 2px 6px black;
 }
 
 nav {
@@ -25,6 +32,7 @@ nav {
   min-width: 350px;
   border-radius: 30%;
   border: 2px solid linen;
+  box-shadow: 1px 1px 5px rgb(20, 20, 40);
 }
 
 nav div {
@@ -37,6 +45,12 @@ nav div:not(:last-of-type) {
   margin-bottom: 4rem;
 }
 
+img {
+  display: block;
+  margin: 0 auto 0 auto;
+  position: relative;
+}
+
 a, a:visited {
   color: khaki;
   text-decoration: none;
@@ -44,6 +58,14 @@ a, a:visited {
 
 a:hover{
   color: linen;
-  background-color: rgb(50, 50, 70);
-  border: 1px solid linen;
+  text-shadow: 0 0 8px linen;
+}
+
+@media screen and (max-width: 850px) {
+  h1 {
+    font-size: 3rem;
+  }
+  nav div {
+    font-size: 2.5rem;
+  }
 }

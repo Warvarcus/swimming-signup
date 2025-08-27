@@ -12,17 +12,57 @@ body {
 }
 
 div.important {
-  width: 100%;
+  width: fit-content;
   text-align: center;
-  margin: 2rem 0 2rem 0;
+  margin: 2rem auto 2rem auto;
+  padding: 1rem 0 1rem 0;
   font-size: 1.7rem;
   color: rgb(225, 0, 0);
   font-weight: bold;
+  border-top: 8px double rgb(225, 0, 0);
+  border-bottom: 8px double rgb(225, 0, 0);
+}
+
+.header {
+  background: linear-gradient(transparent, rgba(100, 149, 237));
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+#please-read {
+  font-size: 2em;
+  color: rgb(225, 0, 0);
+  text-shadow: 0 0 3px darkorange;
+}
+
+#pic {
+  padding: 0;
+  margin: 0 auto 0 auto;
+  width: 600px;
+  position: absolute;
+  z-index: -1;
+  left: 35%;
+  top: 1150px;
 }
 
 @media screen and (max-width : 760px) {
   body {
     font-size: 14px;
+  }
+  div.important {
+    font-size: 1.3rem;
+  }
+  #please-read {
+    font-size: 1.5rem;
+  }
+  .header {
+    background: none;
+  }
+}
+
+@media screen and (max-width : 900px) {
+  #pic {
+    display: none;
   }
 }
 
@@ -31,25 +71,12 @@ html {
   margin: 0;
 }
 
-.header {
-  background: linear-gradient(linen, rgba(100, 149, 237, 0.5));
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-
-}
-
 h1 {
   text-align: center;
   font-family: Adobe Arabic, sans-serif;
   font-size: 3em;
   margin-top: 1.5rem;
   position: relative;
-}
-
-#please-read {
-  font-size: 2em;
-  color: rgb(225, 0, 0);
-  text-shadow: 0 0 3px darkorange;
 }
 
 h2 {
@@ -70,7 +97,7 @@ textarea {
 
 fieldset {
   width: fit-content;
-  border: 2px solid #ccc;
+  border: 2px solid grey;
   margin-bottom: 1rem;
 }
 
@@ -97,9 +124,18 @@ div input:not(input[type="checkbox"]), select {
   display: block;
 }
 
-.rules{
-  width: 98%;
+.rules {
+  max-width: 1000px;
   margin: 0 1rem 1rem 1rem;
+}
+
+.rules p:nth-of-type(3),
+.rules p:nth-of-type(4),
+.rules p:nth-of-type(5),
+.rules p:nth-of-type(6) {
+  max-width: 1000px;
+  border-top: 2px solid rgb(150, 0, 0);
+  padding-top: 1rem;
 }
 
 /* footer {
