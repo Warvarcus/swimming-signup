@@ -4,7 +4,7 @@
 
 body {
   overflow-y: scroll !important;
-  overflow-x: hidden !important;
+  overflow-x: auto !important;
   height: 100%;
   margin: 0;
 }
@@ -14,7 +14,8 @@ html {
   margin: 0;
 }
 
-.important {
+div.important {
+  width: 100%;
   text-align: center;
   margin: 2rem 0 2rem 0;
   font-size: 1.7rem;
@@ -65,7 +66,7 @@ fieldset {
   margin-bottom: 1rem;
 }
 
-div:not(input[type="checkbox"]) {
+div input:not(input[type="checkbox"]) {
   margin-bottom: 1.3rem;
   width: fit-content;
 }
@@ -89,10 +90,11 @@ div:not(input[type="checkbox"]) {
 }
 
 .rules{
-  margin: 0 0 1rem 1rem;
+  width: 98%;
+  margin: 0 1rem 1rem 1rem;
 }
 
-footer {
+/* footer {
   width: 100%;
   max-height: 5rem;
   background: linear-gradient(rgba(100, 149, 237, 0.5), rgba(255, 255, 255, 0.5));
@@ -105,7 +107,7 @@ footer {
 .foot {
   font-size: 1.7em;
   text-align: center;
-}
+} */
 
 legend {
   text-align: left;

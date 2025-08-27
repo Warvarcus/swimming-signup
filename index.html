@@ -1,142 +1,15 @@
-<!doctype html>
-<html class="no-js" lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sign Up Page</title>
-  <link rel="stylesheet" href="./signup-style.css">
-  <meta name="description" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
-
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+  <meta charset="UTF-8">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="./nav-style.css">
 </head>
-
 <body>
-
-  <!-- Add your site or application content here -->
-  <script src="js/app.js"></script>
-  <header class="header">
-    <h1>Sims' Swimming Lessons Sign Up</h1>
-  </header>
-  <h2 id="please-read">Please read before submitting your request!</h2>
-  <div class="rules">
-    <p><u>Location:</u></p>
-    <p>742 Central Drive, Port Neches</p>
-    <p><u>Price:</u></p>
-    <p>$200 per swimmer per session. Payment is <u><strong>CASH ONLY</strong></u></p>
-    <p><u>Session Details:</u></p>
-    <ul>
-      <li>30-minute classes for 5 days.</li>
-      <li>Classes are available for ages 2 - Adult</li>
-      <li>Classes will have a minimum of 3 children in each class.</li>
-      <li>Separate classes are available for adults</li>
-    </ul>
-    <p><u>Sign Up Rules:</u></p>
-    <ul>
-      <li>Classes will be filled in the order requests are received.</li>
-      <li>Classes are formed according to age and swimming experience.</li>
-      <li>If you are wanting to sign up your child with friends and/or
-          family, please indicate that in your session request and
-          I will do my best to place them in the same class.</li>
-      <li>Failure to include all requested information will delay
-          your sign-up and may result in you not getting the session
-          and/or times you have requested.</li>
-    </ul>
-    <p>A confirmation email will be sent to you no later than 7 days
-        once your child has been placed in a class.</p>
-    <div>Payment is due within 10 days of receiving your confirmation
-        email to secure your child’s spot. <div class="important">Failure to pay within 10
-        days of receiving the confirmation email will result in losing
-        the spot in the class.</div></div>
-  </div>
-  <h2>Sign up today!</h2>
-
-  <form id="form">
-    <div>
-      <label for="email">Email: </label>
-      <input type="email" name="email" id="email" placeholder="Email Address" required>
-    </div>
-    <div>
-      <label for="name">Student's Name: </label>
-      <input type="text" name="name" id="name" placeholder="Name" required>
-    </div>
-    <div>
-      <label for="age">Student's Age: </label>
-      <input type="number" name="age" id="age" placeholder="Age" min="2" max="90" required>
-    </div>
-    <div>
-      <label for="experience">Student's Experience: </label>
-      <select name="experience" id="experience" required>
-        <option value="" disabled selected>Select an option</option>
-        <option value="1">No Experience</option>
-        <option value="2">Beginner</option>
-        <option value="3">Intermediate</option>
-        <option value="4">Expert</option>
-      </select>
-    </div>
-
-    <fieldset>
-      <legend>Choose availability:</legend>
-      <ul class="checkbox">
-        <li>
-          <input type="checkbox" id="8am" name="8am" checked />
-          <label for="8am">8:00-9:00 AM</label>
-        </li>
-        <li>
-          <input type="checkbox" id="9am" name="9am" />
-          <label for="9am">9:00-10:00 AM</label>
-        </li>
-        <li>
-          <input type="checkbox" id="10am" name="10am" checked />
-          <label for="10am">10:00-11:00 AM</label>
-        </li>
-        <li>
-          <input type="checkbox" id="11am" name="11am" checked />
-          <label for="11am">11:00AM-12:00PM</label>
-        </li>
-        <li>
-          <input type="checkbox" id="3pm" name="3pm" checked />
-          <label for="3pm">3:00-4:00 PM</label>
-        </li>
-        <li>
-          <input type="checkbox" id="4pm" name="4pm" checked />
-          <label for="4pm">4:00-5:00 PM</label>
-        </li>
-        <li>
-          <input type="checkbox" id="5pm" name="5pm" checked />
-          <label for="5pm">5:00-6:00 PM</label>
-        </li>
-        <li>
-          <input type="checkbox" id="6pm" name="6pm" checked />
-          <label for="6pm">6:00-7:00 PM</label>
-        </li>
-        <li>
-          <input type="checkbox" id="7pm" name="7pm" checked />
-          <label for="7pm">7:00-8:00 PM</label>
-        </li>
-        <li>
-          <input type="checkbox" id="8pm" name="8pm" checked />
-          <label for="8pm">8:00-9:00 PM</label>
-        </li>
-      </ul>
-    </fieldset>
-    <label class="info" for="info">Additional info: </label>
-    <textarea name="info" id="info" cols="30" rows="10" placeholder="Something to know about my child..."></textarea>
-    <input type="submit" value="Submit">
-  </form>
-    <footer>
-      <p class="foot">I'll try to get back to you in a timely manner with a schedule!</p>
-    </footer>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-signup"><a href="signup.html" target="_blank">Signups</a></div>
+  <div class="navbar-about"><a href="about.html" target="_blank">About</a></div>
+  <div class="navbar-FAQ"><a href="about.html" target="_blank">FAQ</a></div>
+</nav>
 </body>
 </html>
