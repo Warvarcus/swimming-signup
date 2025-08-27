@@ -1,0 +1,12 @@
+nav {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  top: 40%;
+  justify-content: center;
+}
+
+nav div {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
