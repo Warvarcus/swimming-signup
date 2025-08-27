@@ -8,6 +8,16 @@ body {
   overflow-x: hidden !important;
   height: 100%;
   margin: 0;
+  background-color: linen;
+}
+
+div.important {
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+  font-size: 1.7rem;
+  color: rgb(225, 0, 0);
+  font-weight: bold;
 }
 
 @media screen and (max-width : 760px) {
@@ -21,17 +31,8 @@ html {
   margin: 0;
 }
 
-div.important {
-  width: 100%;
-  text-align: center;
-  margin: 2rem 0 2rem 0;
-  font-size: 2rem;
-  color: rgb(225, 0, 0);
-  font-weight: bold;
-}
-
 .header {
-  background: linear-gradient(rgb(255, 255, 255), rgba(100, 149, 237, 0.5));
+  background: linear-gradient(linen, rgba(100, 149, 237, 0.5));
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
 
@@ -46,7 +47,7 @@ h1 {
 }
 
 #please-read {
-  font-size: 2.5em;
+  font-size: 2em;
   color: rgb(225, 0, 0);
   text-shadow: 0 0 3px darkorange;
 }
@@ -73,7 +74,7 @@ fieldset {
   margin-bottom: 1rem;
 }
 
-div input:not(input[type="checkbox"]) {
+div input:not(input[type="checkbox"]), select {
   margin-bottom: 1.3rem;
   width: fit-content;
 }
