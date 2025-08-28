@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(0, 0, 35);
+}
+
+.temp {
+  color: bisque;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  top: 40%;
+  font-size: 50px;
+}

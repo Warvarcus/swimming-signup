@@ -45,27 +45,6 @@ div.important {
   top: 1150px;
 }
 
-@media screen and (max-width : 760px) {
-  body {
-    font-size: 14px;
-  }
-  div.important {
-    font-size: 1.3rem;
-  }
-  #please-read {
-    font-size: 1.5rem;
-  }
-  .header {
-    background: none;
-  }
-}
-
-@media screen and (max-width : 900px) {
-  #pic {
-    display: none;
-  }
-}
-
 html {
   height: 100%;
   margin: 0;
@@ -87,7 +66,7 @@ h2 {
 form{
   width: 100%;
   float: left;
-  margin-left: 1rem;
+  margin-left: 3rem;
 }
 
 textarea {
@@ -106,16 +85,17 @@ div input:not(input[type="checkbox"]), select {
   width: fit-content;
 }
 
-.checkbox li {
+.time-checkbox li, .session-checkbox li {
   list-style: none;
 }
 
-.checkbox li:not(:last-of-type) {
+.time-checkbox li:not(:last-of-type),
+.session-checkbox li:not(:last-of-type) {
   display: block;
   margin: 0 2rem 0.7rem 0;
 }
 
-.checkbox {
+.time-checkbox, .session-checkbox {
   padding: 0;
   margin: 0.5rem 0 0 0;
 }
@@ -126,7 +106,7 @@ div input:not(input[type="checkbox"]), select {
 
 .rules {
   max-width: 1000px;
-  margin: 0 1rem 1rem 1rem;
+  margin: 0 1rem 1rem 3rem;
 }
 
 .rules p:nth-of-type(3),
@@ -166,4 +146,28 @@ input[type="submit"] {
   width: 5rem;
   height: 2rem;
   margin-bottom: 5rem;
+}
+
+@media screen and (max-width : 760px) {
+  body {
+    font-size: 14px;
+  }
+  div.important {
+    font-size: 1.3rem;
+  }
+  #please-read {
+    font-size: 1.5rem;
+  }
+  .header {
+    background: none;
+  }
+  .rules, form {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width : 830px) {
+  #pic {
+    display: none;
+  }
 }

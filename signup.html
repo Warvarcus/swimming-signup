@@ -79,7 +79,7 @@
       <input type="email" name="email" id="email" placeholder="Email Address" required>
     </div>
     <div>
-      <label for="name">Student's Name: </label>
+      <label for="name">Student's First Name: </label>
       <input type="text" name="name" id="name" placeholder="Name" required>
     </div>
     <div>
@@ -96,10 +96,34 @@
         <option value="4">Expert</option>
       </select>
     </div>
-
+    <fieldset>
+      <legend>Choose Session(s):</legend>
+      <ul class="session-checkbox">
+        <li>
+          <input type="checkbox" id="1" name="1" />
+          <label for="1">Session 1: (Dates)</label>
+        </li>
+        <li>
+          <input type="checkbox" id="2" name="2" />
+          <label for="2">Session 2: (Dates)</label>
+        </li>
+        <li>
+          <input type="checkbox" id="3" name="3" />
+          <label for="3">Session 3: (Dates)</label>
+        </li>
+        <li>
+          <input type="checkbox" id="4" name="4" />
+          <label for="4">Session 4: (Dates)</label>
+        </li>
+        <li>
+          <input type="checkbox" id="5" name="5" />
+          <label for="5">Session 5: (Dates)</label>
+        </li>
+      </ul>
+    </fieldset>
     <fieldset>
       <legend>Choose availability:</legend>
-      <ul class="checkbox">
+      <ul class="time-checkbox">
         <li>
           <input type="checkbox" id="8am" name="8am" checked />
           <label for="8am">8:00-9:00 AM</label>
@@ -143,7 +167,8 @@
       </ul>
     </fieldset>
     <label class="info" for="info">Additional info: </label>
-    <textarea name="info" id="info" cols="30" rows="10" placeholder="Something to know about my child..."></textarea>
+    <textarea name="info" id="info" cols="30" rows="10"
+              placeholder="Medical conditions, behavioral concerns, etc..."></textarea>
     <input type="submit" value="Submit">
   </form>
     <!-- <footer>
